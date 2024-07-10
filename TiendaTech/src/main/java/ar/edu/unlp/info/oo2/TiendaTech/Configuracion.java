@@ -23,8 +23,9 @@ public class Configuracion {
   }
 
   public String toString() {
-    String resultado = "Precio total: " + this.getPrecio() + "\nConsumo total: " + this.getConsumo() + "\n";
-    return this.componentes.stream().map(c -> c.getDescripcion()).reduce(resultado, (acc, desc) -> acc + desc + "\n");
+    String resultadoFinal = "Precio total: " + this.getPrecio() + "\nConsumo total: " + this.getConsumo() + "\n";
+    return this.componentes.stream().map(componente -> componente.getDescripcion()).reduce(resultadoFinal,
+        (acumulador, descripcion) -> acumulador + descripcion + "\n");
   }
 
 }
