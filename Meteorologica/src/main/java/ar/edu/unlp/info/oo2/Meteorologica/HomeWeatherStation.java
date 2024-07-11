@@ -17,7 +17,7 @@ public class HomeWeatherStation {
     this.temperaturas = new ArrayList<Double>();
   }
 
-  public double getTemperatura() {
+  public double getTemperaturaFahrenhit() {
     return this.temperatura;
   }
 
@@ -29,7 +29,7 @@ public class HomeWeatherStation {
     return this.radiacionSolar;
   }
 
-  public List<Double> getTemperaturas() {
+  public List<Double> getTemperaturasFahrenhit() {
     return this.temperaturas;
   }
 

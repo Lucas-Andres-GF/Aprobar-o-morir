@@ -24,6 +24,14 @@ public class MeteorologicaTest {
   }
 
   @Test
+  public void testGetTemperatura() {
+    temperaturaAFahrenheitDecorator = new TemperaturaAFahrenheitDecorator(this.estacionMeteorologica);
+    temperaturaACelciusDecorador = new TemperaturaACelciusDecorador(temperaturaAFahrenheitDecorator);
+    temperaturaACelciusDecorador = new TemperaturaACelciusDecorador(temperaturaACelciusDecorador);
+    System.out.println(this.temperaturaACelciusDecorador.displayData());
+  }
+
+  @Test
   public void testGetTemperaturaCelcius() {
     this.temperaturaACelciusDecorador = new TemperaturaACelciusDecorador(this.estacionMeteorologica);
     this.temperaturaAFahrenheitDecorator = new TemperaturaAFahrenheitDecorator(this.temperaturaACelciusDecorador);

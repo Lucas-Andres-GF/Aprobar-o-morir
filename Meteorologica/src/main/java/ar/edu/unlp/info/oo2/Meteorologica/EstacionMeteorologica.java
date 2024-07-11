@@ -9,7 +9,7 @@ public class EstacionMeteorologica implements Station {
 
   @Override
   public double getTemperatura() {
-    return this.homeWeatherStation.getTemperatura();
+    return this.homeWeatherStation.getTemperaturaFahrenhit();
   }
 
   @Override
@@ -24,7 +24,7 @@ public class EstacionMeteorologica implements Station {
 
   @Override
   public java.util.List<Double> getTemperaturas() {
-    return this.homeWeatherStation.getTemperaturas();
+    return this.homeWeatherStation.getTemperaturasFahrenhit();
   }
 
   @Override

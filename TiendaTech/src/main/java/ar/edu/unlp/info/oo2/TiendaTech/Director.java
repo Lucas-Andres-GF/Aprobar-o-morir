@@ -13,4 +13,14 @@ public class Director {
     return builder.build();
   }
 
+  public Presupuesto construirPresupuesto2(Builder builder, String nombreDelSolicitante) {
+    builder.reset(nombreDelSolicitante);
+    builder.construirMemoria();
+    builder.construirProcesador();
+    builder.construirDisco();
+    builder.construirGabinete();
+    builder.construirFuente();
+    return builder.build();
+  }
+
 }

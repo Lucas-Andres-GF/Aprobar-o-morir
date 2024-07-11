@@ -71,7 +71,7 @@ public class TiendaTechTest {
   @Test
   public void compuBasicotest() {
     Builder builder = new BasicoBuilder(catalogo);
-    Presupuesto presupuesto = director.construirPresupuesto(builder, "Pedro");
+    Presupuesto presupuesto = director.construirPresupuesto2(builder, "Pedro");
     System.out.println(presupuesto.toString());
   }
 }

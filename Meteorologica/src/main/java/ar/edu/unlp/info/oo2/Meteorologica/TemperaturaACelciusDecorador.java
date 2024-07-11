@@ -6,7 +6,7 @@ public class TemperaturaACelciusDecorador extends Decorador {
     super(station);
   }
 
-  public double getTemperaturaCelcius() {
+  private double getTemperaturaCelcius() {
     return (this.station.getTemperatura() - 32) / 1.8;
   }
 
